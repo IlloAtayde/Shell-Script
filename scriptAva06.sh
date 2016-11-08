@@ -1,5 +1,4 @@
 #!/bin/bash
-#Comandos para ativar exeecução do comando history no script
 #num=`cat arqSoma | tr ':' '\n' | tr '\n' '+' | sed 's/$/0/ ; s/+/ + /g'`
 ls | grep "resultado" &>> log && rm resultado &>> log
 ls | grep "parcelas" &>> log && rm parcelas &>> log

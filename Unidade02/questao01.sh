@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#MINUTO=60
-#HORA=3600
-#DIA=86400
-#ANO=31536000
 nomeArqAgenda=$1
 if [ -z $nomeArqAgenda ]; then
 #Verifica se foi passado algum parâmetro
@@ -14,7 +10,7 @@ elif [ ! -e $nomeArqAgenda ]; then
 	echo "Arquivo inexistente! Criando arquivo..."
 	touch $nomeArqAgenda
 fi
-echo -e "1 - Incluir atividade\n2 - Alterar atividade\n3 - Apagar atividade\n4 - Atividades do dia\n5 - Todas Atividades"
+echo -e "1 - Incluir atividade\n2 - Editar atividade\n3 - Apagar atividade\n4 - Atividades do dia\n5 - Todas Atividades"
 read opMenu
 case $opMenu in
 	1 )
@@ -29,19 +25,62 @@ case $opMenu in
 		mes=`echo "$data" | cut -f2 -d"/"`
 		ano=`echo "$data" | cut -f3 -d"/"`
 		#resto da entrada - Hora e Atividade
-		resEnt=`echo "$entrada" | cut -f2-4 -d" "`
+		resEnt=`echo "$entrada" | sed 's/^[0-3][0-9]\/[0-1][0-9]\/[0-9]\{4\}//'`
 		#formata data e insere dia da semana
-		formatData=`date +"%a - %d/%m/%Y" -d"$ano$mes$dia" 2>> /dev/null`
+		formatData=`date +"%d/%m/%Y - %a" -d"$ano$mes$dia" 2>> /dev/null`
 		if [[ $? -gt 0 ]]; then
+		#se a data informada estiver incorreta
 			echo "Data incorreta, ajuste a data no menu Editar"
 			formatData='Data inválida'
-		fi 
+		fi
+		#monta data e atividade e adiciona ao arquivo 
 		echo "$formatData $resEnt" >> $nomeArqAgenda
+		#ordena as entradas do arquivo
 		sort -n -t/ -k2 $nomeArqAgenda | sort -n -t/ -k3 --output=$nomeArqAgenda;;
-	2 );;
-	3 );;
-	4 );;
-	5 );;
+	2 )
+		echo -e "NÚMERO \tDATA \t\t  HORA    ATIVIDADE"
+		cat -n $nomeArqAgenda
+		numLinhasArquivo=`wc -l $nomeArqAgenda | cut -f1 -d" "`
+		if [[ $numLinhasArquivo -eq 0 ]]; then
+			echo "Agenda vazia, nada para EDITAR"
+			exit
+		fi
+		echo "Insira o número da atividade que deseja EDITAR"
+		read numAtividade
+		if [[ $numAtividade -gt $numLinhasArquivo || $numAtividade -eq 0 || $numAtividade -lt 0 ]]; then
+			echo "Insira um valor válido!"
+			exit
+		fi
+		sed -n "$numAtividade p" $nomeArqAgenda
+		;;
+	3 )
+		echo -e "NÚMERO \tDATA \t\t  HORA    ATIVIDADE"
+		cat -n $nomeArqAgenda
+		numLinhasArquivo=`wc -l $nomeArqAgenda | cut -f1 -d" "`
+		if [[ $numLinhasArquivo -eq 0 ]]; then
+			echo "Agenda vazia, nada para DELETAR"
+			exit
+		fi
+		echo "Insira o número da atividade que deseja DELETAR"
+		read numAtividade
+		if [[ $numAtividade -gt $numLinhasArquivo || $numAtividade -eq 0 || $numAtividade -lt 0 ]]; then
+			echo "Insira um valor válido!"
+			exit
+		fi
+		sed -i "$numAtividade d" $nomeArqAgenda
+		echo "Atividade REMOVIDA com sucesso"
+		echo -e "NÚMERO \tDATA \t\t  HORA    ATIVIDADE"
+		cat -n $nomeArqAgenda;;
+	4 )
+		echo "Insira uma data no formato: dd/mm/aaaa, para listar as atividades do dia."
+		read dataEnt
+		grep $dataEnt $nomeArqAgenda
+		if [[ $? -gt 0 ]]; then
+			echo "Não existe agendamentos para a data informada"
+			exit
+		fi;;
+	5 )	echo -e "NÚMERO \tDATA \t\t  HORA    ATIVIDADE"
+		cat -n $nomeArqAgenda;;
 	* ) exit;;
 esac
 #hora=`ps aux | tr -s " " | grep -m1 $pid | cut -f9 -d" " `

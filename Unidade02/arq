@@ -1,0 +1,891 @@
+    1  PS1='(/w)'
+    2  ls
+    3  PS1='('\u')'
+    4  PS1='('\pwd')'
+    5  PS1=\u
+    6  PS1=\w
+    7  PS1=\pwd
+    8  PS1=`pwd`
+    9  PS1='('`pwd`')'
+   10  PS1='('`pwd`')':`who`
+   11  ls
+   12  PS1='('`pwd`')':`date +"%H%M"`
+   13  PS1='('`pwd`')':`date +"%H:%M"`
+   14  PS1='('`pwd`')'->`date +"%H:%M"`
+   15  PS1='('`pwd`')''->'`date +"%H:%M"`
+   16  sudo su root
+   17  PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+   18  PS1=u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+   19  PS1=\u@\h:\w\$
+   20  PS1=`\u@\h:\w\$`
+   21  exit
+   22  echo $PS1
+   23  PS1='('`pwd`')''->'`date +"%H:%M"`
+   24  PS1='('`pwd`')''->'`date +"%H:%M"'$'`
+   25  PS1='('`pwd`')''->'`date +"%H:%M"' $'`
+   26  cd ..
+   27  ls
+   28  echo $PS1
+   29  exit
+   30  pwd
+   31  cd ..
+   32  echo $PS1
+   33  exit
+   34  PS1='('`pwd`')'
+   35  cd ..
+   36  ls
+   37  cd ..
+   38  ls
+   39  exit
+   40  PS1='('`\u`')'
+   41  PS1='('`/u`')'
+   42  PS1='('`/h`')'
+   43  PS1='('`/w`')'
+   44  PS1='('/w')'
+   45  PS1='('\w')'
+   46  exit
+   47  PS1='\u(\w)$'
+   48  cd ..
+   49  PS1='\u@\h(\w)$'
+   50  PS1='('\w')'
+   51  PS1='\u@\h(\w)$'
+   52  PS1='\u@\h(\w)'->'(\t)$'
+   53  PS1='\u@\h(\w)'->'(\T)$'
+   54  PS1='\u@\h(\w)'->'(\d)$'
+   55  PS1='\u@\h(\w)'->'(\s)$'
+   56  PS1='\u@\h(\w)'->'(\#)$'
+   57  sudo PS1='\u@\h(\w)'->'(\#)$'
+   58  sudo PS1='\u@\h(\w)(\#)$'
+   59  PS1='\u@\h(\w)(\#)$'
+   60  clear
+   61  PS1='\u@\h(\w)(\t)(\#)$'
+   62  PS1='\u@\h(\w)(\T\t)(\#)$'
+   63  PS1='\u@\h(\w)(\d\t)(\#)$'
+   64  PS1='\u(\w)(\d\t)(\#)$'
+   65  PS1='\u:\w(\d\t)(\#)$'
+   66  PS1='\d \t \u:\w(\#)$'
+   67  ls
+   68  cd ~
+   69  exit
+   70  cd precise64/
+   71  ls
+   72  ls -lah
+   73  sudo chown root:root bkpHomeUser
+   74  ls -lah
+   75  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+   76  ls -lah
+   77  sudo chmod +s ultimaModSenhaUser
+   78  ls -lah
+   79  ./ultimaModSenhaUser
+   80  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+   81  ./ultimaModSenhaUser
+   82  ls -lah
+   83  chmod +s ultimaModSenhaUser
+   84  ls -lah
+   85  ./ultimaModSenhaUser
+   86  chown root:root ultimaModSenhaUser scriptAva04.sh
+   87  sudo chown root:root ultimaModSenhaUser scriptAva04.sh
+   88  ls -lah | grep "root"
+   89  ./ultimaModSenhaUser
+   90  chmod +s ultimaModSenhaUser scriptAva04.sh
+   91  sudo chmod +s ultimaModSenhaUser scriptAva04.sh
+   92  ls -lah | grep "root"
+   93  ./ultimaModSenhaUser
+   94  sudo chmod -s ultimaModSenhaUser scriptAva04.sh
+   95  ls -lah | grep "root"
+   96  ./ultimaModSenhaUser
+   97  sudo chmod +s scriptAva04.sh
+   98  ./ultimaModSenhaUser
+   99  sudo chmod +s ultimaModSenhaUser
+  100  ./ultimaModSenhaUser
+  101  ls -lah | grep "root"
+  102  sudo chmod -s scriptAva04.sh
+  103  ls -lah | grep "root"
+  104  ./ultimaModSenhaUser
+  105  ls -lah | grep "root"
+  106  ./ultimaModSenhaUser
+  107  date -d
+  108  date -d -15 days
+  109  date -d "-15 days"
+  110  ./ultimaModSenhaUser
+  111  ls -lah | grep "root"
+  112  ./ultimaModSenhaUser
+  113  sudo chmod -s scriptAva04.sh
+  114  ls -lah | grep "root"
+  115  ./ultimaModSenhaUser
+  116  exit
+  117  ./ultimaModSenhaUser
+  118  cd precise64/
+  119  ./ultimaModSenhaUser
+  120  ls -lah | grep "root"
+  121  sudo chown illoatayde:illoatayde scriptAva04.sh
+  122  ls -lah | grep "root"
+  123  ./ultimaModSenhaUser
+  124  exit
+  125  cd precise64/
+  126  ls -lah | grep "root"
+  127  ./ultimaModSenhaUser
+  128  sudo chown root:root scriptAva04.sh
+  129  ls -lah | grep "root"
+  130  ./scriptAva04.sh
+  131  sudo chmod +s scriptAva04.sh
+  132  ls -lah | grep "root"
+  133  ./scriptAva04.sh
+  134  sudo chmod -s scriptAva04.sh
+  135  sudo chown 1000:1000 scriptAva04.sh
+  136  ls -lah
+  137  ls -lah | grep "root"
+  138  ./ultimaModSenhaUser
+  139  sudo chown 1000:1000 ultimaModSenhaUser
+  140  ls -lah
+  141  sudo chown 0:0 scriptAva04.sh
+  142  ls -lah
+  143  ./ultimaModSenhaUser
+  144  sudo chmod +s scriptAva04.sh
+  145  ./ultimaModSenhaUser
+  146  sudo chmod -s scriptAva04.sh
+  147  sudo chmod +s ultimaModSenhaUser
+  148  ls -lah
+  149  ./ultimaModSenhaUser
+  150  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+  151  ls -lah
+  152  ls -lah | grep "root"
+  153  sudo shown 1000:1000 scriptAva04.sh
+  154  sudo chown 1000:1000 scriptAva04.sh
+  155  ls -lah | grep "root"
+  156  ./ultimaModSenhaUser
+  157  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+  158  ./ultimaModSenhaUser
+  159  ls -lah
+  160  rm cat_2
+  161  ls -lah
+  162  ./ultimaModSenhaUser
+  163  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+  164  ./ultimaModSenhaUser
+  165  rm cat_2
+  166  ./ultimaModSenhaUser
+  167  ls -lah
+  168  ./ultimaModSenhaUser
+  169  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+  170  ./ultimaModSenhaUser
+  171  ls -lah
+  172  gcc -o ultimaModSenhaUser ultimaModSenhaUser.c
+  173  rm cat_2
+  174  ./ultimaModSenhaUser
+  175  ls -lah
+  176  chmod +xs callScript.sh
+  177  ls -lah
+  178  ./callScript.sh
+  179  ls -lah
+  180  rm callScript.sh ultimaModSenhaUser.sh
+  181  mv callScript.sh ultimaModSenhaUser.sh
+  182  mv ./callScript.sh ultimaModSenhaUser.sh
+  183  mv ./callScript.sh ./ultimaModSenhaUser.sh
+  184  ls -lah
+  185  mv callScript.sh ultimaModSenhaUser.sh
+  186  chmod +sx ultimaModSenhaUser.sh
+  187  ls -lah
+  188  ./ultimaModSenhaUser.sh
+  189  ls -lah | grep "root"
+  190  chown 1000:1000 bkpHomeUser
+  191  sudo chown 1000:1000 bkpHomeUser
+  192  ls -lah | grep "root"
+  193  ls -lah
+  194  chmod +sx backUpUserHome.sh
+  195  ls -lah
+  196  ./ultimaModSenhaUser.sh
+  197  chmod +sx ultimaModSenhaUser.sh
+  198  ls -lah
+  199  chmod -s ultimaModSenhaUser.sh
+  200  ls -lah
+  201  ./ultimaModSenhaUser.sh
+  202  chmod +sx ultimaModSenhaUser.sh
+  203  exit
+  204  date +"%b"
+  205  date +"%B"
+  206  date "+%B"
+  207  date "%B"
+  208  date +%B
+  209  date %B
+  210  date -d "+ 2 years"
+  211  date +d "2 years"
+  212  date -d "2 years"
+  213  echo -e "casa\ncama\ncadeira\ncomoda"
+  214  echo -e "casa\ncama\ncadeira\ncomoda" >> casa
+  215  ls
+  216  cat casa
+  217  c='cama'
+  218  echo $c
+  219  grep "$c" casa
+  220  sed "$c p" cursos
+  221  sed "$c p" casa
+  222  sed "/$c/ p" casa
+  223  grep '$c' casa
+  224  grep -o '$c' casa
+  225  ls
+  226  man grep
+  227  echo -e "rm\nmv\ncd\ncp\nls\ngrep" >> comandos
+  228  cat comandos
+  229  grep -R '(rm|mv)' comandos
+  230  grep -R "(rm|mv)" comandos
+  231  grep -E '(rm|mv)' comandos
+  232  grep -E "(rm|mv)" comandos
+  233  grep -E '[rm|mv]' comandos
+  234  grep -E 'rm|mv' comandos
+  235  grep -E '{rm|mv}' comandos
+  236  a=2
+  237  b=4
+  238  c=$(echo $a+$b |bc)
+  239  echo $c
+  240  c=0
+  241  echo $c
+  242  c=$(bc<<<$a+$b)
+  243  echo $c
+  244  c='cama'
+  245  grep "$c" casa
+  246  grep '$c' casa
+  247  grep -o '$c' casa
+  248  cat comandos
+  249  sed -i.copia 'y/c/C/' comandos
+  250  ls
+  251  cat comandos
+  252  cat comandos.copia
+  253  cat comandos.copia 
+  254  sed '/rm/p' comandos.copia
+  255  grep -E "mr" comandos.copia
+  256  grep -E "rm" comandos.copia
+  257  sed -i.backup '/rm/p' comandos.copia
+  258  ls
+  259  cat comandos.copia
+  260  cat comandos.copia.backup 
+  261  ls
+  262  rm comandos.copia.backup comandos.copia comandos casa casa-bela-coberta-jardim 
+  263  cat historico
+  264  rm historico
+  265  ls
+  266  sudo pm-hibernate
+  267  cd precise64/
+  268  cd ShellScript/
+  269  ./scriptAva06.sh
+  270  cd .. ..
+  271  chmod +x scriptteste.sh
+  272  ./scriptteste.sh
+  273  history
+  274  ./scriptteste.sh
+  275  cat historico
+  276  vagrant up
+  277  vagrant ssh
+  278  vagrant halt
+  279  ls -l
+  280  ls -h
+  281  ls -hl
+  282  ls -g
+  283  ls -gG
+  284  ls -gGS
+  285  ls -gG
+  286  ls -gGS
+  287  ls -gGS | grep -v -e '^d'
+  288  ls -X
+  289  ls -gGS | grep -v -e '^d' | cut -c13-
+  290  ls -hgGS | grep -v -e '^d' | cut -c13-
+  291  ls -lah
+  292  chmod +s scriptAva04.sh
+  293  ls -lah
+  294  chmod +s scriptAva04.sh
+  295  ls -lah
+  296  ./scriptAva04.sh
+  297  man cp
+  298  man ls
+  299  ls -d
+  300  ls
+  301  ls -l
+  302  ls -lah | grep '^d'
+  303  cd homeBkupDir
+  304  ls
+  305  cd ..
+  306  ls -lah | grep '^d'
+  307  mkdir teste
+  308  mkdir teste.dir
+  309  ls -lah | grep '^d'
+  310  cd ..
+  311  mkdir -p precise64/teste.dir
+  312  cd precise64/
+  313  ls
+  314  ls -lah | grep '^d'
+  315  rmdir teste.dir
+  316  cd ..
+  317  mkdir -p precise64/teste.dir
+  318  ls -R
+  319  ls -R teste.dir
+  320  cd precise64/
+  321  ls -lah | grep '^d'
+  322  cd ..
+  323  sudo pm-hibernate
+  324  ls
+  325  cat teste
+  326  cat teste.c 
+  327  rm teste teste.c
+  328  ls
+  329  cat 12\:37
+  330  ls -lah
+  331  rm 12\:37
+  332  ls
+  333  rm casabela-coberta-jardim
+  334  ls
+  335  mkdir teste.dir
+  336  ls
+  337  cp -R /home/illoatayde/Documentos/ teste.dir/
+  338  cd teste.dir/
+  339  ls
+  340  cd Documentos
+  341  ls
+  342  ls -lah
+  343  cd ~
+  344  mkdir -p teste.dir
+  345  cd teste.dir/
+  346  ls
+  347  ls -R
+  348  cd ~
+  349  ls
+  350  mkdir -p teste.dir/Documentos/
+  351  ls -Rlah teste.dir/
+  352  rm -Rf teste.dir/
+  353  ls
+  354  ls -Rlah Documentos/
+  355  cd precise64/
+  356  ls -lah
+  357  gcc -o bkpHomeUser bkpHomeUser.c
+  358  ls -lah
+  359  sudo chmod+s bkpHomeUser
+  360  sudo chmod +s bkpHomeUser
+  361  ls -lah
+  362  cd ..
+  363  pwd
+  364  du
+  365  du -h
+  366  clear
+  367  cd precise64/
+  368  vagrant up
+  369  vagrant ssh
+  370  vagrant halt
+  371  vagrant up
+  372  exit
+  373  ps
+  374  ls
+  375  cd precise64/
+  376  ls
+  377  ./ultimaModSenhaUser.sh
+  378  ./scriptAva04.sh
+  379  ps
+  380  kill -9 18191
+  381  bash
+  382  ps
+  383  sh
+  384  bash
+  385  ps
+  386  bash
+  387  bash
+  388  ps
+  389  lspci
+  390  cat /etc/init.d/
+  391  cd /etc/init.d/
+  392  ls
+  393  cat /etc/init.d/network-manager
+  394  cat /etc/init.d/network-manager status
+  395  cd -
+  396  /etc/init.d/network-manager status
+  397  /etc/init.d/network-manager status -l
+  398  /etc/init.d/network-manager restart
+  399  cat /etc/init.d/networking
+  400  /etc/init.d/networking 
+  401  /etc/init.d/networking list
+  402  /etc/init.d/networking stop
+  403  /etc/init.d/networking start
+  404  dmesg
+  405  dmesg >> dmesg.1
+  406  /etc/init.d/halt 
+  407  /etc/init.d/halt st
+  408  sudo init 0
+  409  exit
+  410  dmesg >> dmesg.2
+  411  diff dmesg.1 dmesg.2
+  412  /etc/init.d/bluetooth stop 
+  413  cd precise64/
+  414  ls -lah
+  415  ./ultimaModSenhaUser.sh
+  416  ls -lah | grep '^d'
+  417  nano scriptAva08.sh
+  418  ls -lah | grep -v '^d'
+  419  cp backUpUserHome.sh ultimaModSenhaUser.sh ./ShellScript/
+  420  cd ShellScript/
+  421  ls
+  422  git fetch
+  423  git status
+  424  git add arqSoma backUpUserHome.sh ultimaModSenhaUser.sh 
+  425  git status
+  426  ls -lah
+  427  cd ..
+  428  ls -lah ShellScript/
+  429  ls -l 
+  430  cd ShellScript/
+  431  ./scriptAva06.sh
+  432  cat resultado
+  433  ./scriptAva06.sh
+  434  cat resultado
+  435  ./scriptAva06.sh
+  436  ls 
+  437  ./scriptAva06.sh
+  438  ls 
+  439  ./scriptAva06.sh
+  440  ls 
+  441  ./scriptAva06.sh
+  442  ls
+  443  ./scriptAva06.sh
+  444  ls
+  445  ls -lah
+  446  ./scriptAva06.sh
+  447  ls -lah
+  448  ./scriptAva06.sh
+  449  ls
+  450  cat resultado
+  451  ./scriptAva06.sh
+  452  cat resultado
+  453  ./scriptAva06.sh
+  454  cat resultado
+  455  ./scriptAva06.sh
+  456  cat resultado
+  457  ./scriptAva06.sh
+  458  cat parcelas 
+  459  ./scriptAva06.sh
+  460  cat parcelas 
+  461  ./scriptAva06.sh
+  462  cat log 
+  463  ./scriptAva06.sh
+  464  cat log 
+  465  rm resultado
+  466  rm parcelas
+  467  ./scriptAva06.sh
+  468  cat log 
+  469  ./scriptAva06.sh
+  470  git status
+  471  ./scriptAva06.sh
+  472  ls
+  473  ./scriptAva06.sh
+  474  ls
+  475  ./scriptAva06.sh
+  476  git status
+  477  git fetch
+  478  git status
+  479  git add scriptAva04.sh scriptAva06.sh
+  480  git status
+  481  git add scriptAva08.sh 
+  482  git status
+  483  git push -u origin master
+  484  git fetch
+  485  git commit -m "Ajuste nos scripts"
+  486  git push -u origin master
+  487  git fetch
+  488  git status
+  489  git pull
+  490  git status
+  491  git push -u origin master
+  492  git fetch
+  493  git status
+  494  git add scriptAva06.sh
+  495  git commit -m "Edição do script"
+  496  git push -u origin master
+  497  sudo pm-hibernate
+  498  exit
+  499  history >> teste
+  500  history >> teste
+  501  ce precise64/
+  502  cD precise64/
+  503  cd precise64/
+  504  cd ShellScript/
+  505  ls -lah
+  506  ./ultimaModSenhaUser.sh
+  507  ./scriptAva04.sh
+  508  git status
+  509  touch teste
+  510  git status
+  511  rm teste
+  512  git status
+  513  cd ~
+  514  cat .bash_history
+  515  ls -l
+  516  history
+  517  cat .bash_history
+  518  cd precise64/ShellScript/
+  519  chmod +x teste.sh
+  520  ls 
+  521  ./teste.sh
+  522  cat teste
+  523  cat ~/.bash_history
+  524  ls
+  525  rm teste
+  526  ./teste.sh
+  527  cat teste
+  528  clear
+  529  ls -l
+  530  ls -lha
+  531  ps auxc
+  532  ls -lha
+  533  chmod +s ultimaModSenhaUser.sh
+  534  ./ultimaModSenhaUser.sh
+  535  ls -lha
+  536  ls
+  537  ls |grep scriptAva05.sh
+  538  ls |tr '\n' ':'
+  539  exit
+  540  hostname -I
+  541  ifconfig
+  542  hostname -I
+  543  ping www.google.com.br
+  544  ping 8.8.8.8
+  545  ping 150.165.225.1
+  546  ping https://www.ufpb.br/pontoufpb/aplicacao/login.ufpb
+  547  nslookup
+  548  sudo apt-get update
+  549  sudo apt-get upgrade
+  550  sudo apt-get dist-upgrade
+  551  sudo apt-get autoremove 
+  552  sudo apt-get dist-upgrade
+  553  sudo apt-get autoremove 
+  554  sudo apt-get update
+  555  sudo apt-get upgrade
+  556  exit
+  557  sudo apt-get install atom4
+  558  atom4
+  559  sudo apt-get remove atom4 
+  560  sudo apt-get autoclean 
+  561  ls
+  562  cd ESP8266-Arduino/
+  563  git init
+  564  git fetch
+  565  git pull
+  566  git pull https://github.com/IlloAtayde/ESP8266-Arduino
+  567  git fetch
+  568  ls
+  569  cat README.md
+  570  clear
+  571  git status
+  572  mkdir img
+  573  git status
+  574  ls
+  575  touch teste.txt
+  576  git status
+  577  rm teste.txt
+  578  git status
+  579  echo Teste de commit >> teste.txt
+  580  ls
+  581  cat teste.txt 
+  582  git status
+  583  git add *
+  584  git status
+  585  git commit -m "adição de imagens"
+  586  git push -u https://github.com/IlloAtayde/ESP8266-Arduino
+  587  git push -u origin master
+  588  git fetch
+  589  git fetch https://github.com/IlloAtayde/ESP8266-Arduino
+  590  git push -u origin master
+  591  ls
+  592  cd ESP8266-Arduino/
+  593  ls
+  594  git status
+  595  git init https://github.com/IlloAtayde/ESP8266-Arduino
+  596  git status
+  597  git fetch
+  598  git fetch illoatayde/ESP8266-Arduino
+  599  ls
+  600  cd ~
+  601  ls
+  602  cd precise64/
+  603  ls
+  604  cat historico
+  605  cat comandos 
+  606  cd ShellScript/
+  607  ls
+  608  git status
+  609  cd ..
+  610  ls
+  611  cd Sis
+  612  cd SisOp/
+  613  ls
+  614  cd ..
+  615  ls
+  616  cd workspace/
+  617  ls
+  618  cd gitSend/
+  619  ls
+  620  cd -
+  621  cd ..
+  622  ls
+  623  cd ESP8266-Arduino/
+  624  git status
+  625  git fetch
+  626  history
+  627  man top
+  628  mantop
+  629  cat /proc/cpuinfo
+  630  cat /proc/meminfo
+  631  lshw 
+  632  clear
+  633  cd ESP8266-Arduino/
+  634  ls
+  635  cd https\:/
+  636  ls
+  637  cd ..
+  638  rm -rf https\:/
+  639  ls -la
+  640  rm -rf .git
+  641  ls -la
+  642  git remote add origin https://github.com/IlloAtayde/ESP8266-Arduino
+  643  git remote add origin https://github.com/IlloAtayde/ESP8266-Arduino.git
+  644  git init
+  645  git remote add origin https://github.com/IlloAtayde/ESP8266-Arduino.git
+  646  git status
+  647  git add *
+  648  git status
+  649  git commit -m "Adição no repositório"
+  650  git fetch
+  651  git push -u origin master
+  652  git pull
+  653  git pull origin master
+  654  git fetch
+  655  git push -u origin master
+  656  cat ~/cmdGit.txt
+  657  clear
+  658  cd ~
+  659  git clone ifpb/lm
+  660  git clone https://github.com/ifpb/lm
+  661  ls
+  662  cd lm
+  663  ls
+  664  cd assessment/
+  665  ls
+  666  cd ..
+  667  cd classroom/
+  668  LS
+  669  ls
+  670  cd css
+  671  ls
+  672  exit
+  673  ls 
+  674  cd Arduino
+  675  ls
+  676  ls -la
+  677  exit
+  678  sudo apt-get install vlc
+  679  sudo apt-get dist-upgrade
+  680  sudo apt-get update
+  681  sudo apt-get upgrade 
+  682  lsb_release -a
+  683  uname
+  684  uname -a
+  685  sudo apt-get update 
+  686  sudo apt-get autoremove
+  687  sudo apt-get autoclean 
+  688  exit
+  689  cd workspace/gitSend/
+  690  git status
+  691  git add Clinica_v2/
+  692  git status
+  693  git fetch
+  694  git commit -m "Commit inicial, mas incompleto"
+  695  git push -u origin master
+  696  exit
+  697  lshw
+  698  sudo lshw
+  699  dmidecode
+  700  sudo dmidecode
+  701  clear
+  702  sudo dmidecode
+  703  sudo dmidecode -t
+  704  sudo dmidecode -t memory
+  705  sudo apt-get install fritzing
+  706  fritzing -version
+  707  sudo /home/illoatayde/Downloads/fritzing-0.9.3b.linux.AMD64/install_fritzing.sh
+  708  sudo apt-get remove fritzing
+  709  sudo apt-get autoremove
+  710  ./fritzing
+  711  sudo /home/illoatayde/Downloads/fritzing-0.9.3b.linux.AMD64/install_fritzing.sh
+  712  cd Downloads/fritzing-0.9.3b.linux.AMD64/
+  713  ls -lah
+  714  ./Fritzing
+  715  sudo ./Fritzing
+  716  cd ~
+  717  ls -lah
+  718  cat .mime.types
+  719  rm .mime.types
+  720  ls -lah
+  721  sudo /home/illoatayde/Downloads/fritzing-0.9.3b.linux.AMD64/install_fritzing.sh
+  722  sudo ./fritzing
+  723  cd $APPDIR
+  724  pwd
+  725  ls
+  726  ls -lah
+  727  sudo cd $APPDIR
+  728  cd /
+  729  pwd
+  730  cd $APPDIR
+  731  pwd
+  732  echo $APPDIR
+  733  man xdg-mime
+  734  cd .local/share/applications/
+  735  ls
+  736  cd ..
+  737  cd mime/
+  738  ls
+  739  cd application/
+  740  ls
+  741  cd ..
+  742  cd packages/
+  743  ls
+  744  cd ..
+  745  ls
+  746  ls -lah
+  747  cat mime.cache
+  748  exit
+  749  /home/illoatayde/Downloads/fritzing-0.9.3b.linux.AMD64/Fritzing
+  750  sudo apt-get update
+  751  sudo apt-get upgrade
+  752  sudo apt-get dist-upgrade 
+  753  sudo apt-get autoremove 
+  754  sudo apt-get autoclean 
+  755  cd Downloads/
+  756  ls *.rin
+  757  ls *.run
+  758  ls -lah *.run
+  759  chmod +x *.run
+  760  ls -lah *.run
+  761  ./*.run
+  762  ls -lah
+  763  cd workspace/gitSend/
+  764  git status 
+  765  git add *
+  766  git status 
+  767  cat .metadata/
+  768  cd .metadata/
+  769  ls
+  770  cat version.ini 
+  771  cd -
+  772  ls
+  773  git fetch
+  774  git commit -m "Atualização"
+  775  git fetch
+  776  git push -u origin master
+  777  exit
+  778  sudo apt update
+  779  sudo apt upgrade
+  780  sudo apt autoclean 
+  781  sudo apt autoremove ]
+  782  sudo apt autoremove 
+  783  exit
+  784  ls
+  785  cd workspace/
+  786  ls
+  787  cd gitSend/
+  788  ls
+  789  git status
+  790  git add *
+  791  git fetch
+  792  git commit -m "Atualização"
+  793  git push -u origins master
+  794  git status
+  795  git push -u origin master
+  796  cd ~
+  797  sudo apt update
+  798  sudo apt upgrade
+  799  sudo apt autoremove
+  800  sudo apt autoclean 
+  801  sudo apt dist-upgrade 
+  802  lsb_release
+  803  lsb_release -a
+  804  uname --kernel-version 
+  805  uname --kernel-release
+  806  uname --processor 
+  807  uname --version 
+  808  exit
+  809  uname -a
+  810  ifconfig | grep mac
+  811  ifconfig 
+  812  ping www.google.com
+  813  traceroute
+  814  tracert www.google.com
+  815  traceroute www.google.com
+  816  sudo apt install traceroute
+  817  traceroute www.google.com
+  818  exit
+  819  ping www.google.com.br
+  820  pwd
+  821  mkdir code
+  822  cd code/
+  823  mkdir lm
+  824  rm lm
+  825  rm -rf lm
+  826  git clone http://guithub.com/ifpb/lm
+  827  git clone http://github.com/ifpb/lm
+  828  exit
+  829  cd workspace/
+  830  cd gitSend/
+  831  git status
+  832  git add *
+  833  git commit -m "Atualização"
+  834  git push -u origins master
+  835  git fetch
+  836  git push -u origins master
+  837  git status
+  838  git push -u origin master
+  839  ls -lah
+  840  ls -lah | tr -s " "
+  841  ls -lah | tr -s " " | cut -f5 -d" "
+  842  ls -la | tr -s " " | cut -f5 -d" "
+  843  ls -l | tr -s " " | cut -f5 -d" "
+  844  ls -l | tr -s " " | cut -f5 -d" " | wc
+  845  ls -l | tr -s " " | cut -f5 -d" " | w
+  846  ls -l | tr -s " " | cut -f5 -d" " | wc
+  847  ls -la | tr -s " " | cut -f5 -d" " | wc
+  848  ls -lha | tr -s " " | cut -f5 -d" " | wc
+  849  ls -la
+  850  ls -la  dmesg.1
+  851  ls -lh dmesg.1 | tr -s " " | cut -f5 -d" "
+  852  ls -la dmesg.1 | tr -s " " | cut -f5 -d" "
+  853  TAM=ls -la dmesg.1 | tr -s " " | cut -f5 -d" "
+  854  TAM = ls -la dmesg.1 | tr -s " " | cut -f5 -d" "
+  855  a=1
+  856  b=2
+  857  a+b
+  858  c=$a+$b
+  859  echo c
+  860  echo $c
+  861  TAM=(ls -la dmesg.1 | tr -s " " | cut -f5 -d" ")
+  862  TAM=$(ls -la dmesg.1 | tr -s " " | cut -f5 -d" ")
+  863  echo $TAM
+  864  TAM=`ls -la dmesg.1 | tr -s " " | cut -f5 -d" "`
+  865  echo $TAM
+  866  TAM=`bc <<< (ls -la dmesg.1 | tr -s " " | cut -f5 -d" ")/1024`
+  867  TAM=`bc <<< $(ls -la dmesg.1 | tr -s " " | cut -f5 -d" ")/1024`
+  868  echo $TAM
+  869  ls -lha dmesg.1 | tr -s " " | cut -f5 -d" "
+  870  TAM=`bc <<< $(ls -la dmesg.1 | tr -s " " | cut -f5 -d" ")/1000`
+  871  echo $TAM
+  872  cd precise64/
+  873  vagrant up
+  874  ls
+  875  cd ShellScript/
+  876  ls
+  877  cd Unidade02/
+  878  ls
+  879  chmod +x questao02.sh 
+  880  questao2.sh
+  881  PATH=$PATH:.
+  882  questao2.sh README.md
+  883  ls
+  884  ./questao02.sh
+  885  ./questao02.sh README.md
+  886  ls
+  887  cd ..
+  888  ls
+  889  cd Unidade02/
+  890  touch arq
+  891  history >> arq

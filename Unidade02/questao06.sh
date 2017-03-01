@@ -29,9 +29,16 @@ fi
 if [[ -f $dirAtual/arqContTemp ]]; then #apaga o arquivo se o mesmo já existir
 	rm -rf $dirAtual/arqContTemp
 fi
-pesquisaRecursiva $nomeDir
-sort -nr $dirAtual/arqContTemp | sed -n "1,${qntMaiores}p"
+if [[ $(ls "$nomeDir" | wc -l) -eq 0 ]]; then
+ 	echo "Diretório informado encontra-se vazio!"
+ 	exit
+fi
+oldIFS=$IFS
+IFS=$(echo -e "\t\n") 
+pesquisaRecursiva ${nomeDir}
+IFS=$oldIFS
+sort -nr $dirAtual/arqContTemp 2> /dev/null | sed -n "1,${qntMaiores}p"
 rm -rf $dirAtual/arqContTemp #apaga o arquivo ao final do script
 
 #MODO SIMPLES
-#ls -laRS $nomeDir | tr -s " " | sed -e '/^\./d' | sed -e '/^d/d' | cut -f5,9 -d" " | sed -e '/^$/d' | sort -n -r | sed -n "1,${qntMaiores}p" 2>> /dev/null
+# ls -laRS $nomeDir | tr -s " " | sed -e '/^\./d' | sed -e '/^d/d' | cut -f5,9 -d" " | sed -e '/^$/d' | sort -n -r | sed -n "1,${qntMaiores}p" 2>> /dev/null
